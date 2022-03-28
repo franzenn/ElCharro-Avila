@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+
+*{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+/*------------GRID-----------*/
+
+body{
+	background-image: url(../img/pattern.png);
+	background-attachment: fixed;
+}
+
+
+/*------------MEDIA QUERIES --------------*/
+
+/*------------MEDIA QUERIES --------------*/
+
+
+/*------------ETIQUETAS HTML--------------*/
+
+.bgWhite a{
+	text-decoration: none;
+}
+
+.botonera{
+	background-color: rgba(248, 248, 255, 0.7);
+	width: 100%;
+	height: auto;
+	font-size: 2.7rem;
+	text-decoration: none;
+	list-style: none;
+
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.botonera ol{
+		list-style: none;
+		text-decoration: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+		.botonera ol li{
+			list-style: none;
+			text-decoration: none;
+			display: flex;
+			flex-wrap: wrap;
+			margin: 1rem 7rem 1rem 7rem;
+		}
+
+		 	.botonera ol li a{
+		 		color: #B91B1B;
+		 		text-decoration: none;
+		 		list-style: none;
+		 	}
+
+.flexMenu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.divisorHome{
+		display: flex;
+		flex-wrap: wrap;
+    	justify-content: space-around;
+    	margin: 3rem;
+	}
+
+	.divisorHome img{
+		padding: 1rem 10rem 1rem 10rem;
+		width: 25rem;
+		height: auto;
+	}
+
+h1{
+	text-transform: uppercase;
+	font-family: italic;
+	font-weight: 600;
+	line-height: 10rem;
+}
+h2{
+	font-weight: 400;
+}
+
+section form {
+	display: inline-block;
+}
+
+	section form fieldset legend{
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+
+		section form fieldset label{
+			display: block;
+			font-size: 2rem;
+		}
+			section form fieldset div{
+				display: block;
+			}
+
+footer p {
+	font-family: cursive;
+}
+
+footer div ol li{
+	text-decoration: none;
+	list-style: none;
+	font-size: 1.6rem;
+}
+
+main section h2{
+	color: rgb(27, 128, 67);
+}
+	main section p{
+		color: rgb(0, 79, 31);
+	}
+
+main article ul{
+	list-style: none;
+}
+
+/*---------CLASES MODIFICACIONES DE FONT-----------*/
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+.textXl{
+	font-size: 4rem;
+}
+
+.textMedium{
+	font-size: 3rem;
+}
+
+.textSmall{
+	font-size: 2rem;
+}
+
+.textItalic{
+	font-family: italic;
+}
+
+.textCursive{
+	font-family: cursive;
+}
+
+.textUnderline{
+	text-decoration: underline;
+}
+
+.textBold{
+	font-weight: 600;
+}
+
+.textRed{
+	color: rgb(255, 0, 0);
+}
+
+.textGreen{
+	color: rgb(58, 125, 0);
+}
+
+.textWhite{
+	color: white;
+}
+
+.salto{
+	display: block;
+}
+
+/*---------CLASES MODIFICACIONES DE FONT-----------*/
+
+/*---------FLEX HOME-----------*/
+
+.bgWhite{
+	background-color: rgba(248, 248, 255, 0.7);
+}
+
+.articuloHome{
+	background-image: url(../img/mexican.webp);
+	border: 0.5rem solid darkgray;
+	border-radius: 1rem;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.imgArt{
+	width: 100%;
+	height: auto;
+}
+
+.section{
+	background-image: url(../img/bubble.png);
+	border: 3px solid grey;
+	width: 80%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: column;
+	margin-top: 5rem;
+	text-align: center;
+}
+
+/*---------FLEX HOME-----------*/
+
+/*--------- GRID FOOTER -----------*/
+
+.footer{
+	display: grid;
+	align-items: center;
+    justify-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: "derechos contacto redes";
+}
+
+
+#derechos{
+	grid-area: derechos;
+}
+#contacto{
+	grid-area: contacto;
+}
+#redes{
+	grid-area: redes;
+}
+
+
+/*--------- GRID FOOTER-----------*/
+
+/*--------- CLASES VARIAS-----------*/
+
+.imagenes{
+	width: 100%;
+	height: auto;
+}
+
+.imgSmall{
+	width: 5rem;
+	height: auto;
+}
+
+.imgMedium{
+	width: 60%;
+	height: auto;
+
+}
+
+.bgQuienes{
+	border: 5px solid darkgrey;
+	background-color: rgba(248, 248, 255, 0.5);
+	width: 70%;
+	height: auto;
+	margin-top: 3.4rem;
+	margin-bottom: 3.4rem;
+	-webkit-box-shadow: 2px 1px 24px 5px #000000; 
+	box-shadow: 2px 1px 24px 5px #000000;
+
+}
+
+.bgContacto{
+	background-image: url(../img/cactus.png);
+	border: 3px solid darkgrey;
+	width: 100%%;
+	height: 74.8rem;
+	text-align: center;
+}
+
+.imgArticulo{
+	width: 75%;
+	height: auto;
+}
+
+.articulosMenu{
+	border: 3px solid black;
+	width: 95%;
+	height: auto;
+	text-align: center;
+	background-image: url(../img/cactus.jpg);
+	margin: 2rem 1rem 2rem 1rem;
+	-webkit-box-shadow: -4px 6px 12px 2px #000000; 
+	box-shadow: -4px 6px 12px 2px #000000;
+}
+
+.articulosPromociones{
+	border: 3px solid rgb(43, 171, 94);
+	width: 95%;
+	height: auto;
+	background-image: url(../img/mexico1.png);
+	text-align: center;
+	margin: 4rem 2rem 3rem 2rem;
+	-webkit-box-shadow: -12px 14px 8px 7px rgba(133,52,120,0.66); 
+	box-shadow: -12px 14px 8px 7px rgba(133,52,120,0.66);
+}
+
+/*---------CLASES-----------*/
+
+/*------------CLASE FORMULARIO--------------*/
+
+.form{
+	width: 55%;
+	height: auto;
+	background-color: rgba(248, 248, 255, 0.8);
+}
+
+/*------------CLASE  FORMULARIO--------------*/
+
+/*------------FLEX NOSOTROS--------------*/
+
+.flexNosotros{
+	display: flex;
+	flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.mainNosotros{
+	display: flex;
+	justify-content: center;
+    flex-wrap: wrap
+}
+
+/*------------FLEX NOSOTROS--------------*/
+
+/*------------GRID MENU--------------*/
+
+.gridMenu{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: "titulo titulo titulo" "entrada comidatexana pizzas" "hamburguesas milanesas ensaladas" "jugo . postre";
+}
+
+#titulo{
+	grid-area: titulo;
+}
+
+#entrada{
+	grid-area: entrada;
+}
+#comidaTexana{
+	grid-area: comidatexana;
+}
+
+#pizzas{
+	grid-area: pizzas;
+}
+
+#hamburguesas{
+	grid-area: hamburguesas;
+}
+
+#milanesas{
+	grid-area: milanesas;
+}
+
+#ensaladas{
+	grid-area: ensaladas;
+}
+
+#jugo{
+	grid-area: jugo;
+}
+
+#postre{
+	grid-area: postre;
+}
+
+
+/*------------ GRID MENU --------------*/
+
+/*------------ GRID PROMOCIONES --------------*/
+
+.gridPromociones{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "tituloPromociones tituloPromociones" "lunes martes" "miercoles jueves" "viernes feriados";
+}
+
+#tituloPromociones{
+	grid-area: tituloPromociones;
+}
+
+#lunes{
+	grid-area: lunes;
+}
+#martes{
+	grid-area: martes;
+}
+#miercoles{
+	grid-area: miercoles;
+}
+#jueves{
+	grid-area: jueves;
+}
+#viernes{
+	grid-area: viernes;
+}
+#feriados{
+	grid-area: feriados;
+}
+
+/*------------ GRID PROMOCIONES--------------*/
+
+/*------------FLEX CONTACTO --------------*/
+	
+.flexContacto{
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/*------------FLEX CONTACTO --------------*/
+
+
+/*------------MEDIA QUERIES --------------*/
+
+@media only screen and (max-width: 456px){
+	.divisorHome img{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 768px){
+	.gridMenu{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas: "titulo" "entrada" "comidatexana" "pizzas" "hamburguesas" "milanesas" "ensaladas" "jugo" "postre";
+	}
+	.gridPromociones{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas: "tituloPromociones" "lunes" "martes" "miercoles" "jueves" "viernes" "feriados";
+	}
+	.bgQuienes{
+		width: 100%;
+	}
+	.articuloHome{
+		width: 98%;
+	}
+	.section{
+		width: 98%;
+	}
+
+	.form{
+		width: 100%;
+	}
+
+	main section form img{
+		display: none;
+	}
+
+	.footer{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas: "derechos" "contacto" "redes";
+	}
+
+	footer div{
+		margin-top: 2.5rem;
+	}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	.gridMenu{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "titulo titulo" "entrada comidatexana" "pizzas hamburguesas" "milanesas ensaladas" "jugo postre";
+	}
+}
+
+@media only screen and (max-width: 1058px){
+	.botonera{
+		flex-direction: column;
+
+	}
+
+		.botonera ol{
+			flex-direction: column;
+		}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1778px){
+	.botonera ol li{
+		margin: 1rem;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1410px){
+	.divisorHome{
+		flex-direction: column;
+	}
+}

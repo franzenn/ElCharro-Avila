@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>El Charro - Contacto</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="botonera">
+			<a href="../index.html"> 
+				<img src="../img/charrosinbordes.png" alt="Logo de El Charro">
+			</a>
+			<ol>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="promociones.html">Promociones</a></li>
+				<li><a href="../index.html#encontranos">Encontranos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ol>
+			<a href="../index.html"> 
+				<img src="../img/logo.png" alt="Logo de El Charro">
+			</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="flexContacto textCenter bgContacto">
+			<form action="envio.php" method="post" class="form">
+				<fieldset>
+					<legend class="textXl textCenter">Dejanos tu mensaje!</legend>
+					<label for="nombre">Nombre y apellido:</label>
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="mail@mail.com">
+					<label for="pais">Nacionalidad:</label>
+					<select name="pais" id="pais">
+						<option value="argentina">Argentina</option>
+						<option value="chile">Chile</option>
+						<option value="uruguay">Uruguay</option>
+						<option value="peru">Peru</option>
+						<option value="ecuador">Ecuador</option>
+						<option value="colombia">Colombia</option>
+						<option value="bolivia">Bolivia</option>
+						<option value="otro">Otro</option>
+					</select>
+					<label for="mensaje">Deja tu mensaje:</label>
+					<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+					<div>
+						<input type="reset" value="Cancelar">
+						<input type="submit" value="Enviar">
+					</div>
+					<img src="../img/logo.png" alt="Logo El Charro">
+				</fieldset>
+			</form>
+		</section>
+
+	</main>
+	
+		<footer class="footer bgWhite">
+
+		<div id="derechos">
+			<p class="textSmall">Todos los derechos reservados 2022 ©℗®™</p>
+		</div>
+
+		<div id="contacto">
+			<h3 class="textMedium">Contactanos:</h3>
+			<ol>
+				<li><span class="textUnderline">Mail:</span> infoelcharro@gmail.com</li>
+				<li><span class="textUnderline">Tel:</span> 11-4078-2248</li>
+			</ol>
+		</div>
+		
+		<div id="redes">
+			<h3 class="textMedium">Redes sociales:</h3>
+			<a href="https://facebook.com/ELCHARROBERNAL" target="_blank">
+				<img class="imgSmall" src="../img/facebook.png" alt="logo facebook">
+			</a>
+			<a href="https://instagram.com/elcharrobernal" target="_blank">
+				<img class="imgSmall" src="../img/instagram.png" alt="logo instagram">
+			</a>
+			<a href="https://api.whatsapp.com/send?phone=541140782248" target="_blank">
+				<img class="imgSmall" src="../img/wp.png" alt="logo whatsapp">
+			</a>
+		</div>
+
+	</footer>
+
+</body>
+</html>
