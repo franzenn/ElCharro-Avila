@@ -65,6 +65,31 @@ body{
 		 		list-style: none;
 		 	}
 
+
+/*----------ANIMACIONES-----------*/
+
+			 	.botonera ol li a:hover{
+			 		color: darkred;
+			 		font-weight: 600;
+			 		transform: scale(1.2);
+			 	}
+
+
+.scale:hover{
+	transform: scale(1.5);
+	cursor: pointer;
+	transition: transform 2s;
+	}
+
+.rotate:hover{
+	transform: rotateZ(360deg);
+	cursor: pointer;
+	transition: all 3s;
+}
+ 
+/*----------ANIMACIONES-----------*/
+
+
 .flexMenu{
 	display: flex;
 	flex-direction: column;
@@ -75,7 +100,7 @@ body{
 		display: flex;
 		flex-wrap: wrap;
     	justify-content: space-around;
-    	margin: 3rem;
+    	margin: 4rem;
 	}
 
 	.divisorHome img{
