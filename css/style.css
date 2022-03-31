@@ -36,21 +36,16 @@ body{
 	font-size: 2.7rem;
 	text-decoration: none;
 	list-style: none;
-
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-    align-items: center;
 }
 
-.botonera ol{
+.botonera ul{
 		list-style: none;
 		text-decoration: none;
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-		.botonera ol li{
+		.botonera ul li{
 			list-style: none;
 			text-decoration: none;
 			display: flex;
@@ -58,8 +53,7 @@ body{
 			margin: 1rem 7rem 1rem 7rem;
 		}
 
-		 	.botonera ol li a{
-		 		color: #B91B1B;
+		 	.botonera ul li a{
 		 		text-decoration: none;
 		 		list-style: none;
 		 	}
@@ -67,8 +61,7 @@ body{
 
 /*----------ANIMACIONES-----------*/
 
-			 	.botonera ol li a:hover{
-			 		color: darkred;
+			 	.botonera ul li a:hover{
 			 		font-weight: 600;
 			 		transform: scale(1.2);
 			 	}
@@ -104,7 +97,7 @@ body{
 
 	.divisorHome img{
 		padding: 1rem 10rem 1rem 10rem;
-		width: 25rem;
+		width: 50rem;
 		height: auto;
 	}
 
@@ -226,15 +219,19 @@ main article ul{
 	background-image: url(../img/mexican.webp);
 	border: 0.5rem solid darkgray;
 	border-radius: 1rem;
-	width: 60%;
-	display: flex;
+/*	width: 50%;*/
+/*	display: flex;
 	flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center;*/
 }
 
 .imgArt{
 	width: 100%;
+	height: auto;
+}
+.imgLogo{
+	width: 8%;
 	height: auto;
 }
 
@@ -519,24 +516,28 @@ main article ul{
 	}
 }
 
-@media only screen and (max-width: 1058px){
-	.botonera{
-		flex-direction: column;
-
-	}
-
-		.botonera ol{
-			flex-direction: column;
-		}
-}
-
-@media only screen and (min-width: 1025px) and (max-width: 1778px){
-	.botonera ol li{
-		margin: 1rem;
+@media only screen and (min-width: 993px) and (max-width: 1358px){
+	.botonera ul li{
+		margin: 0.3rem;
+		padding: 0;
 	}
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1410px){
+@media only screen and (min-width: 1359px)  and (max-width: 1508px){
+	.botonera ul li{
+		margin: 2rem;
+		padding: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1509px) and (max-width: 1658px){
+	.botonera ul li{
+		margin-left: 3rem;
+		padding-left: 1rem;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1580px){
 	.divisorHome{
 		flex-direction: column;
 	}
