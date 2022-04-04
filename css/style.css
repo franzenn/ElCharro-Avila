@@ -17,12 +17,6 @@ body{
 	background-attachment: fixed;
 }
 
-/*------------MEDIA QUERIES --------------*/
-
-
-/*------------MEDIA QUERIES --------------*/
-
-
 /*------------ETIQUETAS HTML--------------*/
 
 .bgWhite a{
@@ -33,7 +27,7 @@ body{
 	background-color: rgba(248, 248, 255, 0.7);
 	width: 100%;
 	height: auto;
-	font-size: 2.7rem;
+	font-size: 2rem;
 	text-decoration: none;
 	list-style: none;
 }
@@ -68,15 +62,27 @@ body{
 
 
 .scale:hover{
-	transform: scale(1.5);
+	transform: scale(1.1);
 	cursor: pointer;
 	transition: transform 2s;
 	}
 
 .rotate:hover{
-	transform: rotateZ(360deg);
+	transform: scale(0.7) rotateZ(360deg);
 	cursor: pointer;
-	transition: all 3s;
+	transition: all 5s;
+}
+
+main figure:hover{
+	transform: scale(1.03);
+	cursor: pointer;
+	transition: transform 3s;
+}
+
+main article:hover{
+	transform: scale(1.03);
+	cursor: pointer;
+	transition: transform 3s;
 }
  
 /*----------ANIMACIONES-----------*/
@@ -207,6 +213,10 @@ main article ul{
 	display: block;
 }
 
+.textMenu{
+	background-image: linear-gradient(to top, black, grey);
+}
+
 /*---------CLASES MODIFICACIONES DE FONT-----------*/
 
 /*---------FLEX HOME-----------*/
@@ -219,17 +229,19 @@ main article ul{
 	background-image: url(../img/mexican.webp);
 	border: 0.5rem solid darkgray;
 	border-radius: 1rem;
-/*	width: 50%;*/
-/*	display: flex;
-	flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;*/
 }
 
 .imgArt{
-	width: 100%;
+	width: 50%;
 	height: auto;
 }
+
+.divArt{
+	width: 48%;
+	height: auto;
+	text-align: center;
+}
+
 .imgLogo{
 	width: 8%;
 	height: auto;
@@ -247,31 +259,14 @@ main article ul{
 	text-align: center;
 }
 
+.footerFooter{
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(to top, black, grey);
+}
+
 /*---------FLEX HOME-----------*/
 
-/*--------- GRID FOOTER -----------*/
-
-.footer{
-	display: grid;
-	align-items: center;
-    justify-items: center;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-areas: "derechos contacto redes";
-}
-
-
-#derechos{
-	grid-area: derechos;
-}
-#contacto{
-	grid-area: contacto;
-}
-#redes{
-	grid-area: redes;
-}
-
-
-/*--------- GRID FOOTER-----------*/
 
 /*--------- CLASES VARIAS-----------*/
 
@@ -339,16 +334,6 @@ main article ul{
 }
 
 /*---------CLASES-----------*/
-
-/*------------CLASE FORMULARIO--------------*/
-
-.form{
-	width: 55%;
-	height: auto;
-	background-color: rgba(248, 248, 255, 0.8);
-}
-
-/*------------CLASE  FORMULARIO--------------*/
 
 /*------------FLEX NOSOTROS--------------*/
 
@@ -498,16 +483,12 @@ main article ul{
 		display: none;
 	}
 
-	.footer{
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-areas: "derechos" "contacto" "redes";
+	footer{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
 	}
-
-	footer div{
-		margin-top: 2.5rem;
-	}
-
-}
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
 	.gridMenu{
