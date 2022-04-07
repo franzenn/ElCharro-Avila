@@ -1,0 +1,95 @@
+.flexMenu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.divisorHome{
+		display: flex;
+		flex-wrap: wrap;
+    	justify-content: space-around;
+    	margin: 4rem;
+
+	img{
+		padding: 1rem 10rem 1rem 10rem;
+		width: 30%;
+		height: auto;
+	}
+
+		.scale{
+			&:hover{
+			transform: scale(1.1);
+			cursor: pointer;
+			transition: transform 2s;
+			}
+	
+		}
+
+		.rotate{
+			&:hover{
+				transform: scale(0.7) rotateZ(360deg);
+				cursor: pointer;
+				transition: all 5s;
+			}
+		}
+	}
+
+.articuloHome{
+	background-image: url(../img/mexican.webp);
+	border: 0.5rem solid darkgray;
+	border-radius: 1rem;
+
+	h1{
+		text-transform: uppercase;
+		font-family: italic;
+		font-weight: 600;
+		line-height: 10rem;
+		font-size:$textoXl;
+		background-color:$fondoBlanco;
+		color:$textoRojo;
+
+	}
+
+	div{
+		img{
+			width: 50%;
+			height: auto;
+		}
+	}
+
+	h2{
+		text-align:$textoCentrado;
+		background-color:$fondoBlanco;
+		font-weight:$textoGrueso;
+		font-size:$textoMedium;
+	}
+
+	p{
+		background-color:$fondoBlanco;
+		font-size:$textoSmall;
+		font-weight:$textoGrueso;
+		
+		span{
+			display:block;
+			text-decoration:$textoSubrayado;
+		}
+	}
+}
+
+.section{
+	background-image: url(../img/bubble.png);
+	border: 3px solid grey;
+	width: 80%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: column;
+	margin-top: 5rem;
+	text-align: center;
+
+	div p {
+		color:$textoBlanco;
+		font-weight:$textoGrueso;
+		font-size:$textoMedium;
+	}
+}

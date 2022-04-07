@@ -1,0 +1,38 @@
+.bgWhite a{
+	text-decoration: none;
+}
+
+.botonera{
+	background-color: rgba(248, 248, 255, 0.7);
+	width: 100%;
+	height: auto;
+	font-size: 2rem;
+	text-decoration: none;
+	list-style: none;
+
+	ul{
+		list-style: none;
+		text-decoration: none;
+		display: flex;
+		flex-wrap: wrap;
+
+		li{
+			list-style: none;
+			text-decoration: none;
+			display: flex;
+			flex-wrap: wrap;
+			margin: 1rem 7rem 1rem 7rem;
+
+			a{
+				text-decoration: none;
+		 		list-style: none;
+
+		 	&:hover{
+		 		font-weight: 600;
+				transform: scale(1.2);
+		 	}
+			}
+		}
+	}
+}
+

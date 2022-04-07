@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
+html {
+  font-size: 62.5%; }
+
+* {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url(../img/pattern.png);
+  background-attachment: fixed; }
+
+.bgWhite a {
+  text-decoration: none; }
+
+.botonera {
+  background-color: rgba(248, 248, 255, 0.7);
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  text-decoration: none;
+  list-style: none; }
+  .botonera ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap; }
+    .botonera ul li {
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem 7rem 1rem 7rem; }
+      .botonera ul li a {
+        text-decoration: none;
+        list-style: none; }
+        .botonera ul li a:hover {
+          font-weight: 600;
+          transform: scale(1.2); }
+
+.flexMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.divisorHome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 4rem; }
+  .divisorHome img {
+    padding: 1rem 10rem 1rem 10rem;
+    width: 30%;
+    height: auto; }
+  .divisorHome .scale:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s; }
+  .divisorHome .rotate:hover {
+    transform: scale(0.7) rotateZ(360deg);
+    cursor: pointer;
+    transition: all 5s; }
+
+.articuloHome {
+  background-image: url(../img/mexican.webp);
+  border: 0.5rem solid darkgray;
+  border-radius: 1rem; }
+  .articuloHome h1 {
+    text-transform: uppercase;
+    font-family: italic;
+    font-weight: 600;
+    line-height: 10rem;
+    font-size: 4rem;
+    background-color: rgba(248, 248, 255, 0.7);
+    color: red; }
+  .articuloHome div img {
+    width: 50%;
+    height: auto; }
+  .articuloHome h2 {
+    text-align: center;
+    background-color: rgba(248, 248, 255, 0.7);
+    font-weight: 600;
+    font-size: 3rem; }
+  .articuloHome p {
+    background-color: rgba(248, 248, 255, 0.7);
+    font-size: 2rem;
+    font-weight: 600; }
+    .articuloHome p span {
+      display: block;
+      text-decoration: underline; }
+
+.section {
+  background-image: url(../img/bubble.png);
+  border: 3px solid grey;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: column;
+  margin-top: 5rem;
+  text-align: center; }
+  .section div p {
+    color: white;
+    font-weight: 600;
+    font-size: 3rem; }
+
+footer {
+  background-color: rgba(248, 248, 255, 0.7); }
+  footer div ol li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.6rem; }
+  footer div p {
+    font-size: 2rem;
+    font-family: cursive; }
+  footer div h3 {
+    font-size: 3rem; }
+  footer div ol li span {
+    text-decoration: underline; }
+  footer div div a img {
+    width: 5rem;
+    height: auto; }
+
+.footerFooter {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top, black, grey);
+  text-align: center;
+  color: white; }
+
+@media only screen and (max-width: 456px) {
+  .divisorHome img {
+    display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .gridMenu {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "titulo" "entrada" "comidatexana" "pizzas" "hamburguesas" "milanesas" "ensaladas" "jugo" "postre"; }
+  .gridPromociones {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "tituloPromociones" "lunes" "martes" "miercoles" "jueves" "viernes" "feriados"; }
+  .bgQuienes {
+    width: 100%; }
+  .articuloHome {
+    width: 98%; }
+  .section {
+    width: 98%; }
+  .form {
+    width: 100%; }
+  main section form img {
+    display: none; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .gridMenu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "titulo titulo" "entrada comidatexana" "pizzas hamburguesas" "milanesas ensaladas" "jugo postre"; } }
+
+@media only screen and (min-width: 993px) and (max-width: 1358px) {
+  .botonera ul li {
+    margin: 0.3rem;
+    padding: 0; } }
+
+@media only screen and (min-width: 1359px) and (max-width: 1508px) {
+  .botonera ul li {
+    margin: 0rem;
+    padding: 0rem; } }
+
+@media only screen and (min-width: 1509px) and (max-width: 1879px) {
+  .botonera ul li {
+    margin-left: 1rem;
+    padding-left: 1rem; } }
+
+@media only screen and (min-width: 0px) and (max-width: 1580px) {
+  .divisorHome {
+    flex-direction: column; } }

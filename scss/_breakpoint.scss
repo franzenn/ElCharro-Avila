@@ -1,0 +1,75 @@
+@media only screen and (max-width: 456px){
+	.divisorHome img{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 768px){
+	.gridMenu{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas: "titulo" "entrada" "comidatexana" "pizzas" "hamburguesas" "milanesas" "ensaladas" "jugo" "postre";
+	}
+	.gridPromociones{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas: "tituloPromociones" "lunes" "martes" "miercoles" "jueves" "viernes" "feriados";
+	}
+	.bgQuienes{
+		width: 100%;
+	}
+	.articuloHome{
+		width: 98%;
+	}
+	.section{
+		width: 98%;
+	}
+
+	.form{
+		width: 100%;
+	}
+
+	main section form img{
+		display: none;
+	}
+
+	footer{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	.gridMenu{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "titulo titulo" "entrada comidatexana" "pizzas hamburguesas" "milanesas ensaladas" "jugo postre";
+	}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1358px){
+	.botonera ul li{
+		margin: 0.3rem;
+		padding: 0;
+	}
+}
+
+@media only screen and (min-width: 1359px)  and (max-width: 1508px){
+	.botonera ul li{
+		margin: 0rem;
+		padding: 0rem;
+	}
+}
+
+@media only screen and (min-width: 1509px) and (max-width: 1879px){
+	.botonera ul li{
+		margin-left: 1rem;
+		padding-left: 1rem;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1580px){
+	.divisorHome{
+		flex-direction: column;
+	}
+}
