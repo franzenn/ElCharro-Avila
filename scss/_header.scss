@@ -3,10 +3,9 @@
 }
 
 .botonera{
-	background-color: rgba(248, 248, 255, 0.7);
-	width: 100%;
-	height: auto;
-	font-size: 2rem;
+	background-color:map-get($color , color4);
+	@include w-h(100%,auto);
+	font-size:map-get($size , size3);
 	text-decoration: none;
 	list-style: none;
 
@@ -21,14 +20,14 @@
 			text-decoration: none;
 			display: flex;
 			flex-wrap: wrap;
-			margin: 1rem 7rem 1rem 7rem;
+			@include p-m(0, 1rem 7rem 1rem 7rem);
 
 			a{
 				text-decoration: none;
 		 		list-style: none;
 
 		 	&:hover{
-		 		font-weight: 600;
+		 		font-weight:$textoGrueso;
 				transform: scale(1.2);
 		 	}
 			}

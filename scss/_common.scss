@@ -1,15 +1,36 @@
-// variables globales
+// MAP TEXTOS
 
-$textoXl:4rem;
-$textoMedium:3rem;
-$textoSmall:2rem;
+$fondoImg:false;
+
+$color: (
+	color1: rgb(255, 0, 0),
+	color2: rgba(248, 248, 255, 0.7),
+	color3: rgb(0, 100, 0),
+	color4: rgb(139, 0, 139)
+);
+
+$size: (
+	size1:4rem,
+	size2:3rem,
+	size3:2rem
+);
+
+// VARIABLES TEXTO
 
 
-$fondoBlanco:rgba(248, 248, 255, 0.7);
-
-
-$textoRojo:rgb(255, 0, 0);
-$textoBlanco:white;
 $textoCentrado:center;
 $textoGrueso:600;
 $textoSubrayado:underline;
+
+
+// MIXINS
+
+@mixin p-m($padding,$margin){
+	padding:$padding;
+	margin:$margin;
+}
+
+@mixin w-h($widht,$height){
+	width:$widht;
+	height:$height;
+}

@@ -9,6 +9,12 @@ html{
 }
 
 body{
-	background-image: url(../img/pattern.png);
-	background-attachment: fixed;
+	
+	@if ($fondoImg == false) {
+		background-image: url(../img/pattern.png);
+		background-attachment: fixed;
+	} @else {
+		background-image: url(../img/pattern2.webp);
+		background-attachment: fixed;
+	}
 }

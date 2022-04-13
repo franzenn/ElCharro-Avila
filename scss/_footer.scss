@@ -1,5 +1,5 @@
 footer{
-	background-color:$fondoBlanco;
+	background-color:map-get($color , color2);
 
 	div{
 		ol{
@@ -10,11 +10,11 @@ footer{
 			}
 		}
 		p{
-			font-size:$textoSmall;
+			font-size:map-get($size , size3);
 			font-family: cursive;
 		}
 		h3{
-			font-size:$textoMedium;
+			font-size:map-get($size, size2);
 		}
 		ol{
 			li{
@@ -36,9 +36,8 @@ footer{
 }
 
 .footerFooter{
-	width: 100%;
-	height: auto;
+	@include w-h(100%,auto);
 	background-image: linear-gradient(to top, black, grey);
 	text-align:$textoCentrado;
-	color:$textoBlanco;
+	color:map-get($color , color2);
 }
