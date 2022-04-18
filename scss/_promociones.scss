@@ -1,0 +1,73 @@
+.gridPromociones{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "tituloPromociones tituloPromociones" "lunes martes" "miercoles jueves" "viernes feriados";
+
+	#tituloPromociones{
+	grid-area: tituloPromociones;
+	}
+
+	#lunes{
+		grid-area: lunes;
+	}
+	#martes{
+		grid-area: martes;
+	}
+	#miercoles{
+		grid-area: miercoles;
+	}
+	#jueves{
+		grid-area: jueves;
+	}
+	#viernes{
+		grid-area: viernes;
+	}
+	#feriados{
+		grid-area: feriados;
+	}
+}
+
+
+.tituloPromociones{
+	font-size:map-get($size, size1);
+	background-image: linear-gradient(to top, black, grey);
+	text-align:$textoCentrado;
+	text-decoration:$textoSubrayado;
+	color:map-get($color, color2);
+}
+
+.articulosPromociones{
+	border: 3px solid rgb(43, 171, 94);
+	@include w-h(95%,auto);
+	background-image: url(../img/mexico1.png);
+	text-align:$textoCentrado;
+	@include p-m(0,4rem 2rem 3rem 2rem);
+	-webkit-box-shadow: -12px 14px 8px 7px rgba(133,52,120,0.66); 
+	box-shadow: -12px 14px 8px 7px rgba(133,52,120,0.66);
+
+	h2{
+		color:map-get($color, color1);
+		font-size:map-get($size, size1);
+		text-align:$textoCentrado;
+		background-color:map-get($color, color2);
+		font-weight:$textoGrueso;
+	}
+
+	img{
+		@include w-h(75%,auto);
+	}
+
+	p{
+		color:map-get($color,color5);
+		font-weight:500;
+		text-align:$textoCentrado;
+		font-size:map-get($size, size2);
+		background-color:map-get($color, color2);
+	}
+
+	&:hover{
+		transform: scale(1.03);
+		cursor: pointer;
+		transition: transform 3s;
+	}
+}

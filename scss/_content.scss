@@ -105,4 +105,9 @@
 		font-weight:$textoGrueso;
 		font-size:map-get($size, size2);
 	}
+
+	img{
+		width: 10%;
+		height:auto;
+	}
 }

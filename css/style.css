@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
 
 *{
 	font-family: 'Raleway', sans-serif;
@@ -8,22 +8,22 @@
 
 html{
 	font-size: 62.5%;
-}
+}*/
 
 /*------------GRID-----------*/
 
-body{
+/*body{
 	background-image: url(../img/pattern.png);
 	background-attachment: fixed;
 }
-
+*/
 /*------------ETIQUETAS HTML--------------*/
 
-.bgWhite a{
+/*.bgWhite a{
 	text-decoration: none;
-}
+}*/
 
-.botonera{
+/*.botonera{
 	background-color: rgba(248, 248, 255, 0.7);
 	width: 100%;
 	height: auto;
@@ -50,18 +50,18 @@ body{
 		 	.botonera ul li a{
 		 		text-decoration: none;
 		 		list-style: none;
-		 	}
+		 	}*/
 
 
 /*----------ANIMACIONES-----------*/
 
-			 	.botonera ul li a:hover{
+/*			 	.botonera ul li a:hover{
 			 		font-weight: 600;
 			 		transform: scale(1.2);
-			 	}
+			 	}*/
 
 
-.scale:hover{
+/*.scale:hover{
 	transform: scale(1.1);
 	cursor: pointer;
 	transition: transform 2s;
@@ -71,23 +71,23 @@ body{
 	transform: scale(0.7) rotateZ(360deg);
 	cursor: pointer;
 	transition: all 5s;
-}
+}*/
 
-main figure:hover{
+/*main figure:hover{
+	transform: scale(1.03);
+	cursor: pointer;
+	transition: transform 3s;
+}*/
+
+/*main article:hover{
 	transform: scale(1.03);
 	cursor: pointer;
 	transition: transform 3s;
 }
-
-main article:hover{
-	transform: scale(1.03);
-	cursor: pointer;
-	transition: transform 3s;
-}
- 
+ */
 /*----------ANIMACIONES-----------*/
 
-
+/*
 .flexMenu{
 	display: flex;
 	flex-direction: column;
@@ -115,9 +115,9 @@ h1{
 }
 h2{
 	font-weight: 400;
-}
+}*/
 
-section form {
+/*section form {
 	display: inline-block;
 }
 
@@ -132,32 +132,32 @@ section form {
 		}
 			section form fieldset div{
 				display: block;
-			}
+			}*/
 
-footer p {
+/*footer p {
 	font-family: cursive;
-}
+}*/
 
-footer div ol li{
+/*footer div ol li{
 	text-decoration: none;
 	list-style: none;
 	font-size: 1.6rem;
-}
+}*/
 
-main section h2{
+/*main section h2{
 	color: rgb(27, 128, 67);
 }
 	main section p{
 		color: rgb(0, 79, 31);
-	}
+	}*/
 
-main article ul{
+/*main article ul{
 	list-style: none;
-}
+}*/
 
 /*---------CLASES MODIFICACIONES DE FONT-----------*/
 
-.textCenter{
+/*.textCenter{
 	text-align: center;
 }
 
@@ -214,14 +214,14 @@ main article ul{
 }
 
 .textMenu{
-	background-image: linear-gradient(to top, black, grey);
+	background-image: linear-gradient(to top, black, grey);*/
 }
 
 /*---------CLASES MODIFICACIONES DE FONT-----------*/
 
 /*---------FLEX HOME-----------*/
 
-.bgWhite{
+/*.bgWhite{
 	background-color: rgba(248, 248, 255, 0.7);
 }
 
@@ -263,13 +263,13 @@ main article ul{
 	width: 100%;
 	height: auto;
 	background-image: linear-gradient(to top, black, grey);
-}
+}*/
 
 /*---------FLEX HOME-----------*/
 
 
 /*--------- CLASES VARIAS-----------*/
-
+/*
 .imagenes{
 	width: 100%;
 	height: auto;
@@ -331,13 +331,13 @@ main article ul{
 	margin: 4rem 2rem 3rem 2rem;
 	-webkit-box-shadow: -12px 14px 8px 7px rgba(133,52,120,0.66); 
 	box-shadow: -12px 14px 8px 7px rgba(133,52,120,0.66);
-}
+}*/
 
 /*---------CLASES-----------*/
 
 /*------------FLEX NOSOTROS--------------*/
 
-.flexNosotros{
+/*.flexNosotros{
 	display: flex;
 	flex-direction: row;
     align-content: space-between;
@@ -349,13 +349,13 @@ main article ul{
 	display: flex;
 	justify-content: center;
     flex-wrap: wrap
-}
+}*/
 
 /*------------FLEX NOSOTROS--------------*/
 
 /*------------GRID MENU--------------*/
 
-.gridMenu{
+/*.gridMenu{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
@@ -395,14 +395,14 @@ main article ul{
 
 #postre{
 	grid-area: postre;
-}
+}*/
 
 
 /*------------ GRID MENU --------------*/
 
 /*------------ GRID PROMOCIONES --------------*/
 
-.gridPromociones{
+/*.gridPromociones{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas: "tituloPromociones tituloPromociones" "lunes martes" "miercoles jueves" "viernes feriados";
@@ -429,27 +429,27 @@ main article ul{
 }
 #feriados{
 	grid-area: feriados;
-}
+}*/
 
 /*------------ GRID PROMOCIONES--------------*/
 
 /*------------FLEX CONTACTO --------------*/
 	
-.flexContacto{
+/*.flexContacto{
 	display: flex;
 	flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
-}
+}*/
 
 /*------------FLEX CONTACTO --------------*/
 
 
-/*------------MEDIA QUERIES --------------*/
+/*/*------------MEDIA QUERIES --------------*/
 
-@media only screen and (max-width: 456px){
+/*@media only screen and (max-width: 456px){
 	.divisorHome img{
 		display: none;
 	}
@@ -522,4 +522,4 @@ main article ul{
 	.divisorHome{
 		flex-direction: column;
 	}
-}
+}*/

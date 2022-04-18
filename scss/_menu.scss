@@ -1,0 +1,90 @@
+
+
+.gridMenu{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: "titulo titulo titulo" "entrada comidatexana pizzas" "hamburguesas milanesas ensaladas" "jugo . postre";
+
+		#titulo{
+			grid-area: titulo;
+		}
+
+		#entrada{
+			grid-area: entrada;
+		}
+		#comidaTexana{
+			grid-area: comidatexana;
+		}
+
+		#pizzas{
+			grid-area: pizzas;
+		}
+
+		#hamburguesas{
+			grid-area: hamburguesas;
+		}
+
+		#milanesas{
+			grid-area: milanesas;
+		}
+
+		#ensaladas{
+			grid-area: ensaladas;
+		}
+
+		#jugo{
+			grid-area: jugo;
+		}
+
+		#postre{
+			grid-area: postre;
+		}
+
+}
+
+.tituloMenu{
+	display: block;
+	font-size:map-get($size , size1);
+	text-align:$textoCentrado;
+	background-image: linear-gradient(to top, black, grey);
+	color:map-get($color,color2);
+}
+
+figure{
+	border: 3px solid black;
+	width: 95%;
+	height: auto;
+	text-align: center;
+	background-image: url(../img/cactus.jpg);
+	margin: 2rem 1rem 2rem 1rem;
+	-webkit-box-shadow: -4px 6px 12px 2px #000000; 
+	box-shadow: -4px 6px 12px 2px #000000;
+
+	figcaption{
+		font-size:map-get($size,size2);
+		text-align:$textoCentrado;
+		font-weight:$textoGrueso;
+		background-color:map-get($color,color2);
+	}
+
+	img{
+		@include w-h(75%, auto);
+		text-align:$textoCentrado;
+
+	}
+
+	p{
+		background-color:map-get($color, color2);
+		font-family:$textItalic;
+		text-align:$textoCentrado;
+		font-size:map-get($size,size2);
+
+	}
+
+	&:hover{
+		transform: scale(1.03);
+		cursor: pointer;
+		transition: transform 3s;
+	}
+}
