@@ -43,12 +43,6 @@
 	border-radius: 1rem;
 	background-image: url(../img/mexican.webp);
 
-	&:hover{
-		transform:scale(1.07);
-		cursor:pointer;
-		transition: all 2.5s;
-	}
-
 	h1{
 		text-transform: uppercase;
 		font-family: italic;

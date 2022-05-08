@@ -1,0 +1,28 @@
+.error{
+	@include w-h(100%,auto);
+}
+
+.textoError{
+	text-align: center;
+	color: #FFFFFF;
+	background: #333333;
+	text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+	span{
+		display:block;
+	}
+}
+
+.errorFlex{
+	display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.errorh1{
+	font-size:map-get($size , size1);
+	color: #FFFFFF;
+	background: #b8b8b8;
+	text-shadow: 4px 3px 0 #7A7A7A;
+}

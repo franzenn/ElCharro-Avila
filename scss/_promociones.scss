@@ -64,6 +64,20 @@
 		font-size:map-get($size, size2);
 		background-color:map-get($color, color2);
 	}
+	ul{
+		@include p-m(2rem, 2rem);
+
+			li{
+			width: 100%;
+			color:map-get($color,color3);
+			text-decoration:$textoSubrayado;
+			font-style:$textoSubrayado;
+			text-align:$textoCentrado;
+			background-color:map-get($color,color2);
+			font-size:map-get($size,size3);
+			list-style:none;			
+			}
+		}
 
 	&:hover{
 		transform: scale(1.03);

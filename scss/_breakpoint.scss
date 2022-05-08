@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px){
+	@media only screen and (max-width: 768px){
 	.gridMenu{
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-areas: "titulo" "entrada" "comidatexana" "pizzas" "hamburguesas" "milanesas" "ensaladas" "jugo" "postre";
@@ -21,6 +21,19 @@
 		width: 100%;
 	}
 
+	.articulosPromociones{
+		h2{
+			font-size:map-get($size,size2);
+		}
+		p{
+		color:map-get($color,color5);
+		font-weight:500;
+		text-align:$textoCentrado;
+		font-size:map-get($size, size3);
+		background-color:map-get($color, color2);
+		}
+	}
+
 	main section form img{
 		display: none;
 	}
@@ -37,6 +50,7 @@
 		text-align: center;
 		justify-content: center;
 	}
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -46,17 +60,17 @@
 	}
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1358px){
+@media only screen and (min-width: 992px) and (max-width: 1358px){
 	.botonera ul li{
-		margin: 0.3rem;
-		padding: 0;
+		margin: 0.8rem;
+		padding: 0.8;
 	}
 }
 
 @media only screen and (min-width: 1359px)  and (max-width: 1508px){
 	.botonera ul li{
-		margin: 0rem;
-		padding: 0rem;
+		margin: 0.6rem;
+		padding: 0.6rem;
 	}
 }
 
@@ -74,5 +88,12 @@
 			width: 40%;
 			height: auto;
 		}
+	}
+}
+
+
+@media only screen and (max-width: 990px){
+	.errorFlex{
+    	flex-direction: column;
 	}
 }
